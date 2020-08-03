@@ -45,3 +45,6 @@ append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'node_module
 
 # Default value for default_env is {}
 set :default_env, { path: '/usr/local/rvm/rubies/ruby-2.7.0/bin:$PATH' }
+
+# passenger stderr: /usr/bin/env: ‘passenger’: No such file or directory
+set :passenger_restart_with_touch, true
